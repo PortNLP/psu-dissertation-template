@@ -1,0 +1,144 @@
+\documentclass[letterpaper, 12pt, oneside, doublespacing]{Thesis}
+
+\usepackage{geometry}
+\geometry{total={6in, 8.5in}, left=2.5in, top=2.0in}
+\usepackage{cite}
+\usepackage{graphicx}
+\doublespacing
+\usepackage{subfig}
+\usepackage{float}
+\usepackage[numbers, sort, comma, square]{natbib}
+\usepackage{soul}
+\usepackage{amssymb}
+\usepackage{arydshln}
+\usepackage{xcolor}
+
+\setlength{\parindent}{20pt}
+
+
+\newcommand{\mee}[1]{\textcolor{blue}{AA: #1}}
+\newcommand{\ec}[1]{\textcolor{olive}{EC: #1}}
+
+
+\DeclareMathOperator*{\argmax}{arg\,max}
+%-------------------------------------------------------------------------------
+\begin{document}
+\frontmatter
+
+\title{Lorem Ipsum}
+\authors{Cascade Vikings}
+\addresses {\groupname\\\deptname\\\univname}
+\date{\today}
+\subject{}
+\keywords{}
+
+\maketitle
+% -------------------------------------------------------------------------------
+\setstretch{1.3}
+\fancyhead{}
+\fancyfoot[C]{\thepage}
+\pagestyle{fancy}
+% -------------------------------------------------------------------------------
+\addtotoc{Abstract}
+\abstract{
+  \addtocontents{toc}{}
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+}
+\clearpage
+
+%-------------------------------------------------------------------------------
+\pagestyle{fancy}
+%-------------------------------------------------------------------------------
+\tableofcontents 
+
+% ----------------------------------------------------------------
+\listoffigures  % Write out the List of Figures
+
+% ----------------------------------------------------------------
+\listoftables  % Write out the List of Tables
+
+% ----------------------------------------------------------------
+\mainmatter	  % Begin normal, numeric (1,2,3...) page numbering
+\fancyhead{}
+\fancyfoot[C]{\thepage}
+\pagestyle{fancy}  % Return the page headers back to the "fancy" style
+
+
+\chapter{Introduction}
+\section{Lorem Ipsum}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+\begin{figure}
+  \centering
+  \subfloat[\centering high visual richness]{{\includegraphics[width=3cm]{example-grid-100x100pt}}}
+  \qquad
+  \subfloat[\centering low visual richness]{{\includegraphics[width=3cm]{example-grid-100x100pt}}}
+  \caption{Lorem ipsum dolor sit amet, consectetur adipiscing elit.}
+  \label{fig:fig_1}
+\end{figure}
+
+
+
+\section{Motivation}
+
+\section{Research Questions}
+\begin{enumerate}
+  \item Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+  \item Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat?
+  \item Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur?
+\end{enumerate}
+
+
+\section{Outline}
+
+
+\chapter{Background and Related Work}
+
+\section{Tasks}\label{sec:tasks}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=3cm]{example-grid-100x100pt}
+  \caption{Lorem ipsum dolor sit amet, consectetur adipiscing elit.}
+  \label{fig:vrd_ocr}
+\end{figure}
+
+
+\section{Datasets}\label{sec:datasets}
+
+\section{Models}
+
+
+\chapter{Lorem Ipsum Dolor Sit Amet}
+\section{Introduction}
+
+\section{Lorem Ipsum Dolor Sit Amet}
+
+\section{Experiments}
+
+\section{Conclusions}
+
+ %===============================================================================
+\chapter{Dataset}
+
+\section{Lorem Ipsum Dolor Sit Amet}
+
+\chapter{Measurement}
+\section{Introduction}
+
+\section{Metric A}
+
+\chapter{Proposed Work and Timeline}
+
+\section{Lorem Ipsum Dolor Sit Amet}
+\subsection{Description}
+
+\subsection{Time Estimate}
+
+\chapter{Expected Contributions}
+
+
+\bibliographystyle{unsrtnat}
+\bibliography{references}
+
+\end{document}
